@@ -63,9 +63,7 @@ Generated log files are excluded from Git using `.gitignore`. Review logs before
 
 ## Project status
 
-Tested locally on macOS and Ubuntu 24.04 for uptime, memory reporting, disk reporting, logging, smoke tests, and Bash syntax. Ubuntu-specific service-check behavior remains to be tested.
-
-The SSH service check still needs verification on a full Ubuntu system where `systemctl` is available.
+The smoke-test script and Bash syntax checks have been run on macOS and Ubuntu 24.04. The smoke tests check for expected commands and script sections; they do not exercise system behavior. The SSH service check requires a Linux system with `systemctl` and an SSH service, so verify it on the target distribution before relying on its result.
 
 ## Workflow Diagram and Screenshots
 
